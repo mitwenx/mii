@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mitwen - Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
 </head>
 <body>
     <nav>
@@ -17,7 +18,6 @@
             <a href="#blog">Blog</a>
             <a href="#contact">Contact</a>
         </div>
-        <!-- Mobile menu toggle -->
         <div class="menu-toggle">
             <i class="fas fa-bars"></i>
         </div>
@@ -65,7 +65,7 @@
         <h2>Projects</h2>
         <div class="project-card">
             <div class="project-image">
-                <img src="https://images.unsplash.com/photo-1614482324605-453351684189" alt="Project Preview">
+                <img src="https://images.unsplash.com/photo-1614482324605-453351684189" alt="Project Preview" loading="lazy">
             </div>
             <div class="project-content">
                 <h3>Mii Project</h3>
@@ -81,7 +81,7 @@
         <h2>Blog</h2>
         <div class="blog-posts">
             <article class="blog-card">
-                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643" alt="Python Blog">
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643" alt="Python Blog" loading="lazy">
                 <div class="blog-content">
                     <h3>Getting Started with Python</h3>
                     <p>My journey learning Python programming...</p>
@@ -89,7 +89,7 @@
                 </div>
             </article>
             <article class="blog-card">
-                <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e" alt="Nature Photography">
+                <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e" alt="Nature Photography" loading="lazy">
                 <div class="blog-content">
                     <h3>Nature Photography Tips</h3>
                     <p>Capturing the beauty of nature through the lens...</p>
@@ -106,6 +106,6 @@
         </p>
     </section>
 
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
 </body>
 </html>
