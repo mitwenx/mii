@@ -25,7 +25,6 @@ body {
     background: var(--background);
 }
 
-/* Navigation */
 nav {
     position: fixed;
     top: 0;
@@ -65,7 +64,6 @@ nav {
     color: var(--primary);
 }
 
-/* Sections */
 section {
     padding: 5rem 2rem;
     max-width: 1200px;
@@ -95,7 +93,6 @@ section {
     margin: 0 auto 2rem;
 }
 
-/* Buttons */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -132,7 +129,6 @@ section {
     justify-content: center;
 }
 
-/* Cards */
 .card {
     background: var(--card-bg);
     padding: 2rem;
@@ -151,7 +147,6 @@ section {
     margin-bottom: 1rem;
 }
 
-/* Hobby Cards */
 .hobby-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -159,7 +154,6 @@ section {
     margin-top: 2rem;
 }
 
-/* Project Card */
 .project-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -179,7 +173,6 @@ section {
     padding: 2rem;
 }
 
-/* Blog Cards */
 .blog-posts {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -207,7 +200,6 @@ section {
     font-size: 0.875rem;
 }
 
-/* Contact Section */
 .email-link {
     color: var(--primary);
     text-decoration: none;
@@ -217,7 +209,6 @@ section {
     text-decoration: underline;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
