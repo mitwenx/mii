@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    function updateActiveLink() {
+    const updateActiveLink = () => {
         const scrollPosition = window.scrollY;
 
         sections.forEach(section => {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
-    }
+    };
 
     window.addEventListener('scroll', updateActiveLink);
     updateActiveLink();
@@ -43,8 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
             const targetId = link.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            targetSection.scrollIntoView({ behavior: 'smooth' });
+            document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
         });
     });
 });
